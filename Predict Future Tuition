@@ -1,0 +1,15 @@
+package com.perscholas.java_basics;
+
+public class FindWhenFeesGetsDoubled {
+	public static void main(String args[]) {
+		double tution=10000;
+		double rate = 0.07;
+		int year=0;
+		while(tution<20000)
+		{
+		tution = tution + (tution * rate);
+		year++;
+		}
+		System.out.printf("In %d years, your tution fees will get doubled",year);
+	}
+}
