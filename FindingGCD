@@ -8,11 +8,11 @@ public class GreatestCommonDivisor {
 		Scanner s = new Scanner(System.in);
 		int num1 = s.nextInt();
 		int num2 = s.nextInt();
-		int largestNumber;
-		largestNumber = findTheLargestNumber(num1, num2);
+		int smallestNumber;
+		smallestNumber = findTheSmallestNumber(num1, num2);
 
 		// finding the gcd
-		for (int i = largestNumber; i > 0; i--) {
+		for (int i = smallestNumber; i > 0; i--) {
 			if (num1 % i == 0 && num2 % i == 0) {
 				System.out.printf("Gcd is %d", i);
 				break;
@@ -22,8 +22,8 @@ public class GreatestCommonDivisor {
 
 	}
 
-	public static int findTheLargestNumber(int a, int b) {
-		if (a > b)
+	public static int findTheSmallestNumber(int a, int b) {
+		if (a <= b)
 			return a;
 		else
 			return b;
